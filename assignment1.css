@@ -1,0 +1,136 @@
+body{
+    background-image: url('top.jpeg');
+    background-repeat:inherit;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url('Nightmare.ttf');
+}
+
+.layout{
+    display:grid;
+	grid-template-columns: 6fr 4fr;
+	grid-template-rows: 0.2fr 0.8fr;
+	grid-template-areas: "header header"
+                         "main aside"
+}
+
+.name{
+    font-family: myfont;
+    font-size: 100px;
+    color: #a3080c;
+    margin: 10px;
+}
+
+.navigation_bar{
+    padding:0;
+    margin:0;
+    list-style: none;
+    width:800px;
+    float:left;
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+}
+
+.headGrid {
+    grid-area: header;
+}
+
+.navigation_bar li{
+	text-align: center;
+    width: 30%;
+    height: 40px;
+    margin: 5px 3px;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+}
+   
+.navigation_bar li a {
+    color:#a3080c;
+    display: inline-block;
+    /* width:50px; */
+    text-decoration: none;
+    font-family: myfont;
+    font-size:18px;
+    opacity:0.8;
+   
+}
+
+.navigation_bar li a:hover{
+    background-color:#a3080c;
+    color: white;
+} 
+ 
+
+.main{
+    border-style:solid;
+    width: 55%;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+h2{
+    padding:12px;
+    margin-left:1em;
+    font-size: 30px;
+    color:#a3080c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.transbox{
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color:aliceblue;
+  border-left:15px solid #a3080c;
+  opacity:0.8;
+  filter:alpha(opacity=60);
+  border-radius: 0.8%;
+  grid-area: main;
+  width:90%;
+  height:1050px;
+  
+}
+
+.transbox p
+{
+  margin:30px 40px;
+  font-weight:bold;
+  color: #000000;
+}
+
+.sidebar{
+	background-color:#DFF6FF;
+    opacity: 0.8;
+	grid-area:aside;
+    border-radius:10px;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT','Calibri', 'Trebuchet MS', sans-serif;
+    height: 380px;
+    margin-left: 250px;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
+.side_navi{
+    list-style: none;
+
+}
+
+.side_bar_div {
+    margin-left: 5%;
+}
+
+.side_bar_img {
+    width: 60%;
+    height: 60%;
+    margin-left: 7.5%;
+
+}
+
+#form{
+    margin-top: 2%;
+}
